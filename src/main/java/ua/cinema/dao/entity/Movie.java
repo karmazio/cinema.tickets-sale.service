@@ -27,4 +27,10 @@ public class Movie implements Serializable {
     @Column(name = "image")
     private String image;
 
+    @Column(name = "genre")
+    private String genre;
+
+    @Column(name = "plot")
+    private String plot;
+
 }

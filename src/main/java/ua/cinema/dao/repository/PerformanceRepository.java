@@ -13,4 +13,6 @@ public interface PerformanceRepository extends CrudRepository<Performance, Long>
     Performance findPerformanceById(Long id);
 
     List<Performance> findPerformancesByMovieAndDisplayedOrderByDateAscStartAsc(Movie movie, boolean displayed);
+
+    List<Performance> findAllByOrderByDisplayedAscDateAscStartAsc();
 }

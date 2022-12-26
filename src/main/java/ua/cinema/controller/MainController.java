@@ -31,7 +31,7 @@ public class MainController {
 
     @GetMapping("/index")
     public String schedule(Model model) {
-        List<Performance> shows = performanceService.getAll();
+        List<Performance> shows = performanceService.getAllOrdered();
         model.addAttribute("schedule", shows);
         return "index";
     }

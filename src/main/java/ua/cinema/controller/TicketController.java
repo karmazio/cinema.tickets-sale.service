@@ -44,7 +44,7 @@ public class TicketController {
             price.setLineNumber(i);
             priceForm.addPrice(price);
         }
-        model.addAttribute("title", performance.getMovie().getTitle());
+        session.setAttribute("performance", performance);
         model.addAttribute("priceForm", priceForm);
         session.setAttribute("performanceId", id);
         return "set-price";
@@ -120,9 +120,8 @@ public class TicketController {
     }
 
 
-
     @GetMapping("/back")
-    public String returnMain(){
+    public String returnMain() {
         return "redirect:/user-schedule";
     }
 
@@ -136,4 +135,25 @@ public class TicketController {
         model.addAttribute("sumOfSales", sum);
         return "tickets-sold";
     }
+
+    @PostMapping("/tickets-sold/delete/{id}")
+    public String deletePurchaseForTicket(@PathVariable("id") Long id) {
+        Ticket ticket = ticketService.findById(id);
+        ticket.setReserved(false);
+        ticket.setUser(null);
+        ticket.setPurchaseTime(null);
+        ticketService.saveTicket(ticket);
+        return "redirect:/tickets-sold";
+    }
+    @PostMapping("/myTickets/remove/{id}")
+    public String deleteTicketFromCart(@PathVariable("id") Long id) {
+        Ticket ticket = ticketService.findById(id);
+        ticket.setReserved(false);
+        ticket.setUser(null);
+        ticket.setPurchaseTime(null);
+        ticketService.saveTicket(ticket);
+        return "redirect:/myTickets";
+    }
+
+
 }

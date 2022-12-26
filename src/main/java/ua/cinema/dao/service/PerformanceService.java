@@ -20,6 +20,11 @@ public class PerformanceService {
         performanceRepository.findAll().forEach(performances::add);
         return performances;
     }
+    public List<Performance> getAllOrdered() {
+        return new ArrayList<>(performanceRepository.findAllByOrderByDisplayedAscDateAscStartAsc());
+    }
+
+
 
     @Transactional
     public void savePerformance(Performance performance) {

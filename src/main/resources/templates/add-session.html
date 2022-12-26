@@ -1,35 +1,138 @@
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add new performance</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Add session</title>
+    <link rel="stylesheet" href="styles/add-session-styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <style>
+        h1 {
+            position: absolute;
+            top: 145px;
+            left: 35%;
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            font-size: 50px;
+            font-weight: bolder;
+            letter-spacing: 0.4rem;
+        }
+
+        .session-input {
+            position: absolute;
+            top: 250px;
+            left: 35%;
+            display: grid;
+        }
+
+        .class-field {
+            position: relative;
+            margin-top: 10px;
+            width: 700px;
+            height: 40px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .input-label {
+            width: 120px;
+            height: 30px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, rgba(255, 98, 0, 100%), rgb(255, 196, 0));
+            padding-top: 10px;
+            border-radius: 15px;
+            text-align: center;
+            vertical-align: middle;
+            color: white;
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .date-form {
+            margin-left: 130px;
+            position: relative;
+            top: -40px;
+            width: 540px;
+            height: 35px;
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            font-size: 14px;
+            letter-spacing: 0.3rem;
+            border: none;
+        }
+
+        .time-form {
+            margin-left: 130px;
+            position: relative;
+            top: -40px;
+            width: 540px;
+            height: 35px;
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            font-size: 14px;
+            letter-spacing: 0.3rem;
+            border: none;
+        }
+
+        .hall-form {
+            margin-left: 130px;
+            position: relative;
+            top: -40px;
+            width: 540px;
+            height: 35px;
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            font-size: 14px;
+            letter-spacing: 0.3rem;
+            border: none;
+        }
+
+        .add-btn {
+            position: relative;
+            top: 40px;
+            background: linear-gradient(to right, rgba(255, 196, 0), rgb(255, 98, 0, 100%));
+            height: 30px;
+            border-radius: 12px;
+            border: none;
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            font-size: 18px;
+            font-weight: bolder;
+            color: white;
+            letter-spacing: 0.5rem;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: background-color, opacity, letter-spacing 1s;
+        }
+
+        .add-btn:hover {
+            background: linear-gradient(to right, rgb(255, 98, 0, 100%), rgba(255, 196, 0));
+            opacity: 90%;
+            letter-spacing: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <h1 style="position: relative; left: 35%">Add new performance</h1>
-    <form th:action="@{/performance/create}" th:object="${performance}" method="post"
-          style="width: 500px;position: relative;left: 30%;">
-        <div class="mb-3">
-            <label for="date" class="form-label">Date</label>
-            <input th:field="*{date}" type="date" class="form-control" id="date">
-        </div>
-        <div class="mb-3">
-            <label for="start" class="form-label">Starts at</label>
-            <input th:field="*{start}" type="text" class="form-control" id="start">
-        </div>
-        <div class="mb-3">
-            <label for="hall">Select hall</label>
-            <select th:field="*{hall.id}" id="hall">
+<h1>Create performance</h1>
+<form class="session-input" th:action="@{/performance/create}" th:object="${performance}" method="post">
+    <div class="class-field">
+        <div class="input-label">Date</div>
+        <input th:field="*{date}" type="date" class="date-form" id="date">
+
+    </div>
+    <div class="class-field">
+        <div class="input-label">Start</div>
+        <input th:field="*{start}" type="text" class="time-form" id="start" placeholder="HH:MM:SS">
+    </div>
+    <div class="class-field">
+        <div class="input-label">Hall</div>
+        <select th:field="*{hall.id}" id="hall" class="hall-form">
             <option th:each="hall : ${halls}" th:value="${hall.id}" th:text="${hall.name}">
             </option>
         </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Add</button>
-    </form>
-</div>
+    </div>
+    <button type="submit" class="add-btn">Create performance</button>
+
+</form>
 </body>
 </html>

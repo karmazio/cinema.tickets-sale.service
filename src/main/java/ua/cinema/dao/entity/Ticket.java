@@ -40,6 +40,6 @@ public class Ticket implements Serializable {
     @JoinColumn(name = "performance")
     private Performance performance;
 
-    @Column(name = "purchaseTime", columnDefinition = "DATETIME")
+    @Column(name = "purchase_time", columnDefinition = "DATETIME")
     private Timestamp purchaseTime;
 }

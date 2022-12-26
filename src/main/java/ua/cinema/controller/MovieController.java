@@ -49,6 +49,18 @@ public class MovieController {
         return "redirect:/repertoire";
     }
 
+    @GetMapping("/repertoire/index")
+    public String fromAddToMain() {
+        return "redirect:/index";
+    }
+
+    @GetMapping("/repertoire/tickets-sold")
+    public String fromAddToSold() {
+        return "redirect:/tickets-sold";
+    }
+
+
+
     @GetMapping("/{filename:.+}")
     public ResponseEntity<Resource> getImage(@PathVariable String filename) {
         Resource file = storageService.load(filename);
@@ -85,6 +97,7 @@ public class MovieController {
             if (existed) {
                 Movie movie = movieService.findByImage(filename);
                 movie.setImage(null);
+                movieService.saveMovie(movie);
                 redirectAttributes.addFlashAttribute("message", "Delete the image successfully: " + filename);
             } else {
                 redirectAttributes.addFlashAttribute("message", "The image does not exist!");

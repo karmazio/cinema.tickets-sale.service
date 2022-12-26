@@ -2,56 +2,166 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My tickets</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+    <title>Cart</title>
+    <style>
+
+        .markup {
+            display: grid;
+            grid-template-columns: 1fr 1000px 1fr;
+        }
+
+        .header {
+            position: absolute;
+            top: 200px;
+        }
+
+        .back-btn {
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            font-family: inherit;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: #FF9801;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: color, background-color 1s;
+        }
+
+        .back-btn:hover {
+            color: #FF9801;
+            background-color: white;
+            font-size: 34px;
+        }
+
+        h1 {
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            font-size: 50px;
+            font-weight: bolder;
+            letter-spacing: 0.4rem;
+        }
+
+        .cart-table {
+            position: absolute;
+            top: 350px;
+            font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            box-shadow: -5px 10px 11px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            width: 1000px;
+            height: 200px;
+            padding-bottom: 25px;
+        }
+
+        .cart-table th {
+            font-size: 30px;
+            text-align: left;
+            margin: 10px;
+
+        }
+
+        .table-header {
+            box-shadow: -5px 10px 11px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            height: 0;
+            /*background-color: rgba(247, 255, 1, 0.5);*/
+        }
+
+        .delete-ticket {
+            position: relative;
+            top: 10px;
+            text-align: center;
+            background-color: rgba(215, 0, 0, 0.67);
+            width: 40px;
+            height: 40px;
+            border-width: 0;
+            border-radius: 50%;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            transition: background-color 1s;
+        }
+
+        .delete-btn {
+            background-color: rgba(154, 154, 154, 0);
+            border: none;
+            cursor: pointer;
+            color: white;
+            transition: color 1s;
+        }
+
+        .delete-ticket:hover {
+            background-color: white;
+        }
+
+        .delete-ticket:hover .delete-btn {
+            color: black;
+        }
+
+        .total {
+            box-shadow: -5px 10px 11px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            background-color: rgba(247, 255, 1, 0.5);
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
+<div class="markup">
+    <div></div>
     <div>
-        <h2 style="position: relative; left: 45%">
-            <td th:text="${session.username}"/>
-            , here is your cart:
-        </h2>
+        <div class="header">
+            <button type="button" class="back-btn" th:onclick="|window.location.href='user-schedule'|">Back</button>
+            <h1 th:text="'This is your cart, ' + ${session.username}"></h1>
+        </div>
+        <div>
+            <table class="cart-table">
+                <tr class="table-header">
+                    <th>Purchased</th>
+                    <th>Movie</th>
+                    <th>Date</th>
+                    <th>Hall</th>
+                    <th>Row/Seat</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+                <tr th:each="ticket : ${cart}">
+                    <td th:text="${#dates.format(ticket.purchaseTime, 'dd.MM.yyyy HH:mm:ss')}"></td>
+                    <td th:text="${ticket.performance.movie.title}"></td>
+                    <td th:text="${#dates.format(ticket.performance.date, 'dd/MM')} + ' ' + ${#dates.format(ticket.performance.start, 'HH:mm')}"></td>
+                    <td th:text="${ticket.performance.hall.name}"></td>
+                    <td th:text="${ticket.line} + '/' + ${ticket.seat}"></td>
+                    <td th:text="${ticket.price} + ' UAH'"></td>
+                    <td>
+                        <form class="delete-ticket" th:method="post"
+                              th:action="@{myTickets/remove/{id}(id=${ticket.id})}">
+                            <button class="delete-btn"
+                                    title="Remove this ticket from cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-trash" viewBox="0 0 16 16"
+                                     style="position: relative; top: 10px;">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                    <path fill-rule="evenodd"
+                                          d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="font-weight: bolder; font-size: 20px">Total price:</td>
+                    <td class="total" th:text="${sumToPay} + ' UAH'"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div class="container">
-        <button type="button" class="btn btn-primary"
-                th:onclick="|window.location.href='user-schedule'|"> Back to main
-        </button>
-    </div>
-    <table class="table table-striped">
-        <tr>
-            <th>Purchased at</th>
-            <th>Movie</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Hall</th>
-            <th>Row/Seat</th>
-            <th>Price</th>
-        </tr>
-        <tr th:each="ticket : ${cart}">
-            <td th:text="${ticket.purchaseTime}"></td>
-            <td th:text="${ticket.performance.movie.title}"></td>
-            <td th:text="${ticket.performance.date}"></td>
-            <td th:text="${ticket.performance.start}"></td>
-            <td th:text="${ticket.performance.hall.name}"></td>
-            <td th:text="${ticket.line} + '/' + ${ticket.seat}"></td>
-            <td th:text="${ticket.price}"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Total price: </td>
-            <td th:text="${sumToPay}"></td>
-        </tr>
-    </table>
+    <div></div>
 </div>
-
 </body>
 </html>
