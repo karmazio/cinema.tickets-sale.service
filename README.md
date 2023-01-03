@@ -1,9 +1,15 @@
-> Online cinema tickets sale project made using Java, HTML, CSS, Spring Boot, MySQL.
+## Online cinema tickets sale project 
 
-Features implemented:
+*Made using Java, HTML, CSS, Spring Boot, MySQL.*
+
+#### Features implemented:
+
 - Signing up new customer;
+
 - Logging in;
+
 - Splitted functional for customers and admin;
+
 >Admin is able to:
  - create and delete movies in repertoire
  - add and delete posters for each movie
