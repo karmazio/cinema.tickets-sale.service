@@ -1,0 +1,652 @@
+[
+  {
+    "id": 361,
+    "reserved": false,
+    "price": 100,
+    "line": 1,
+    "seat": 1,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 362,
+    "reserved": false,
+    "price": 100,
+    "line": 1,
+    "seat": 2,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 363,
+    "reserved": false,
+    "price": 100,
+    "line": 1,
+    "seat": 3,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 364,
+    "reserved": false,
+    "price": 100,
+    "line": 1,
+    "seat": 4,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 365,
+    "reserved": false,
+    "price": 100,
+    "line": 1,
+    "seat": 5,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 366,
+    "reserved": false,
+    "price": 100,
+    "line": 2,
+    "seat": 1,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 367,
+    "reserved": false,
+    "price": 100,
+    "line": 2,
+    "seat": 2,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 368,
+    "reserved": false,
+    "price": 100,
+    "line": 2,
+    "seat": 3,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 369,
+    "reserved": false,
+    "price": 100,
+    "line": 2,
+    "seat": 4,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 370,
+    "reserved": false,
+    "price": 100,
+    "line": 2,
+    "seat": 5,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 371,
+    "reserved": false,
+    "price": 100,
+    "line": 3,
+    "seat": 1,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 372,
+    "reserved": false,
+    "price": 100,
+    "line": 3,
+    "seat": 2,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 373,
+    "reserved": false,
+    "price": 100,
+    "line": 3,
+    "seat": 3,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 374,
+    "reserved": false,
+    "price": 100,
+    "line": 3,
+    "seat": 4,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 375,
+    "reserved": false,
+    "price": 100,
+    "line": 3,
+    "seat": 5,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 376,
+    "reserved": false,
+    "price": 100,
+    "line": 4,
+    "seat": 1,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 377,
+    "reserved": false,
+    "price": 100,
+    "line": 4,
+    "seat": 2,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 378,
+    "reserved": false,
+    "price": 100,
+    "line": 4,
+    "seat": 3,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 379,
+    "reserved": false,
+    "price": 100,
+    "line": 4,
+    "seat": 4,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 380,
+    "reserved": false,
+    "price": 100,
+    "line": 4,
+    "seat": 5,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 381,
+    "reserved": false,
+    "price": 100,
+    "line": 5,
+    "seat": 1,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 382,
+    "reserved": false,
+    "price": 100,
+    "line": 5,
+    "seat": 2,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 383,
+    "reserved": false,
+    "price": 100,
+    "line": 5,
+    "seat": 3,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 384,
+    "reserved": false,
+    "price": 100,
+    "line": 5,
+    "seat": 4,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  },
+  {
+    "id": 385,
+    "reserved": false,
+    "price": 100,
+    "line": 5,
+    "seat": 5,
+    "user": null,
+    "performance": {
+      "id": 19,
+      "date": 1670364000000,
+      "start": "19:00:00",
+      "movie": {
+        "id": 9,
+        "title": "Pulp fiction",
+        "released": 1994,
+        "duration": "02:34:00",
+        "directed": "Q. Tarantino"
+      },
+      "hall": {
+        "id": 2,
+        "name": "blue",
+        "rows": 5,
+        "columns": 5
+      }
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Dr. Strangelove",
+    "released": 1964,
+    "duration": "01:34:00",
+    "directed": "S. Kubrick"
+  },
+  {
+    "id": 2,
+    "title": "Taxi Driver",
+    "released": 1976,
+    "duration": "01:53:00",
+    "directed": "M. Scorcese"
+  },
+  {
+    "id": 9,
+    "title": "Pulp fiction",
+    "released": 1994,
+    "duration": "02:34:00",
+    "directed": "Q. Tarantino"
+  }
+]

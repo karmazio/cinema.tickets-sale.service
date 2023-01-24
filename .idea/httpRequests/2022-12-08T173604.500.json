@@ -1,0 +1,6 @@
+{
+  "timestamp": 1670513764354,
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/tickets/simpleAdd"
+}

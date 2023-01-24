@@ -1,0 +1,300 @@
+POST http://localhost:8080/tickets/add/19
+
+<> 2022-12-09T141230.200.json
+
+###
+
+POST http://localhost:8080/tickets/add/19
+
+<> 2022-12-09T141147.200.json
+
+###
+
+POST http://localhost:8080/tickets/add/19
+
+<> 2022-12-09T141055.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T133234.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T133014.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132919.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132749.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132627.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132539.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132434.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132407.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132232.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T132030.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T131248.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T131153.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T131057.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T130939.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T130903.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T130722.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T130626.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T125838.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-09T125656.500.json
+
+###
+
+POST http://localhost:8080/performance/simpleAdd
+
+<> 2022-12-09T124921.200.json
+
+###
+
+GET http://localhost:8080/tickets/all
+
+<> 2022-12-08T181600.200.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T180409.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T180400.400.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T180332.400.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T180251.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T174030.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T173604.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T165706.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T165618.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T164613.500.json
+
+###
+
+POST http://localhost:8080/tickets/simpleAdd
+
+<> 2022-12-08T164534.500.json
+
+###
+
+POST http://localhost:8080/tickets/add/19
+
+<> 2022-12-08T164327.500.json
+
+###
+
+GET http://localhost:8080/tickets/all
+
+<> 2022-12-08T164123.200.json
+
+###
+
+POST http://localhost:8080/tickets/add/19
+
+<> 2022-12-08T163729.500.json
+
+###
+
+POST http://localhost:8080/tickets/add/15
+
+<> 2022-12-08T163636.500.json
+
+###
+
+POST http://localhost:8080/tickets/add/15
+
+<> 2022-12-08T163255.500.json
+
+###
+
+GET http://localhost:8080/performance/find/15
+
+<> 2022-12-08T163253.200.json
+
+###
+
+GET http://localhost:8080/performance/find/15l
+
+<> 2022-12-08T163052.400.json
+
+###
+
+POST http://localhost:8080/tickets/add/15
+
+<> 2022-12-08T162955.500.json
+
+###
+
+POST http://localhost:8080/tickets/add/15
+
+<> 2022-12-08T162715.500.json
+
+###
+
+GET http://localhost:8080/tickets/all
+
+<> 2022-12-08T162426.200.json
+
+###
+
+GET http://localhost:8080/performance/find/15
+
+<> 2022-12-08T162138.200.json
+
+###
+
+GET http://localhost:8080/performance/all
+
+<> 2022-12-08T161950.200.json
+
+###
+
+GET http://localhost:8080/performance/all
+
+<> 2022-12-08T161948.200.json
+
+###
+
+GET http://localhost:8080/movie/all
+
+<> 2022-12-08T161946.200.json
+
+###
+
+POST http://localhost:8080/tickets/add/15
+
+<> 2022-12-08T161757.500.json
+
+###
+
+POST http://localhost:8080/tickets/add/15
+
+<> 2022-12-08T161126.500.json
+
+###
+

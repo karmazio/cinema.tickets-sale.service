@@ -1,0 +1,6 @@
+{
+  "timestamp": 1670509852446,
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/performance/find/15l"
+}
