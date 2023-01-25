@@ -1130,7 +1130,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>1</Position>
     </column>
     <column id="316" parent="305" name="id">
-      <AutoIncrement>2135</AutoIncrement>
+      <AutoIncrement>2134</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1174,7 +1174,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="326" parent="306" name="id">
-      <AutoIncrement>2136</AutoIncrement>
+      <AutoIncrement>2135</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1310,18 +1310,12 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DataType>enum(&apos;ADMIN&apos;, &apos;CUSTOMER&apos;)|0e</DataType>
       <Position>5</Position>
     </column>
-    <column id="357" parent="308" name="account_non_locked">
-      <DataType>tinyint|0s</DataType>
-      <DefaultExpression>1</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <index id="358" parent="308" name="PRIMARY">
+    <index id="357" parent="308" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="359" parent="308" name="PRIMARY">
+    <key id="358" parent="308" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
