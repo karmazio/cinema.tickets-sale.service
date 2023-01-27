@@ -82,7 +82,6 @@
             font-size: 14px;
             letter-spacing: 0.3rem;
             border: none;
-            resize: none;
         }
 
         .add-btn {
@@ -135,8 +134,7 @@
     </div>
     <div class="plot-field">
         <div class="input-label">Plot</div>
-        <textarea th:field="*{plot}" type="text" class="plot-input" id="plotInput">
-        </textarea>
+        <input th:field="*{plot}" type="text" class="plot-input" id="plotInput">
     </div>
     <button type="submit" class="add-btn">Add movie</button>
 </form>
