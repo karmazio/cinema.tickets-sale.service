@@ -102,12 +102,12 @@
         }
 
         .occupied {
-            width: 70px;
-            height: 45px;
+            width: 60px;
+            height: 60px;
             text-align: center;
             font-family: inherit;
-            font-size: 30px;
-            padding-top: 15px;
+            padding-top: 20px;
+            font-size: 20px;
             font-weight: bold;
             border: none;
             border-radius: 5px;
@@ -123,11 +123,11 @@
     <div class="performance-card">
         <div class="info-line" style="font-weight: bold" th:text="${session.performance.movie.title}"></div>
         <div class="info-line"
-             th:text="${#dates.format(session.performance.date, 'dd/MM')} + ' | ' + ${#dates.format(session.performance.start, 'HH:mm')}">
+             th:text="${#dates.format(${session.performance.date}, 'dd/MM')} + ' | ' + ${#dates.format(${session.performance.start}, 'HH:mm')}">
         </div>
         <div class="info-line" th:text="${session.performance.getHall().name}"></div>
         <form th:method="get"
-              th:action="@{/user-schedule}">
+              th:action="@{/index}">
             <button type="submit" class="main-btn">Back</button>
         </form>
     </div>
